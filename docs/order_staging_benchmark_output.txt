@@ -1,0 +1,13 @@
+=== Order Staging Gate Benchmark ===
+PMs: 12, orders: 9600 (9000 compliant, 600 seeded violations)
+Seeded violations blocked: 600 of 600
+  RESTRICTED   200 of 200
+  NOTIONAL     200 of 200
+  POSITION     200 of 200
+False blocks over 9000 compliant orders: 0
+Audit rows written: 9600 (expected 9600)
+Position reconciliation mismatches (live book vs. audit-log oracle): 0
+
+Gate evaluation latency (order submitted -> accept/block decision):
+staging_latency  n=9600     mean=   0.002ms  p50=   0.001ms  p90=   0.002ms  p99=   0.021ms  max=    1.501ms
+p99 staging latency 0.0214ms (target: under 4ms)

@@ -1,0 +1,12 @@
+PASS restricted instrument is blocked
+PASS over-notional order is blocked
+PASS over-position order is blocked
+PASS ordinary compliant order is accepted
+PASS AuditLog exposes no remove/clear/set mutator
+PASS rows() snapshot grows only by append
+PASS every evaluated order produces exactly one audit row
+PASS live PmBook position matches independent audit-log recomputation
+PASS restricted-list reason is reported ahead of position reason
+PASS small simulated stream: zero false blocks on compliant orders
+PASS small simulated stream: every seeded violation caught
+All checks passed.
